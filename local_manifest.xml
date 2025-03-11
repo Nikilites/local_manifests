@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Remote -->
-    <remote name="github" fetch="https://github.com" clone-depth="1" />
-    
-    <!-- Device -->
-    <project path="device/samsung/santos103g" name="android_device_samsung_santos103g" remote="github" revision="los-16.0" />
+    <!-- defining remote name -->
+    <remote name="Nikilites" fetch="https://github.com/Nikilites/" />
 
-    <!-- Kernel -->
-    <project path="kernel/samsung/santos103g" name="android_kernel_samsung_santos103g" remote="github" revision="los-16.0" />
+    <!-- device tree for galaxy tab 3 10.1 (3g) -->
+    <project path="device/samsung/santos103g" name="android_device_samsung_santos103g" remote="Nikilites" revision="los-16.0" />
 
-    <!-- Vendor -->
-    <project path="vendor/samsung/santos103g" name="proprietary_vendor_santos103g" remote="github" revision="los-16.0" />
+    <!-- common device tree for all santos10 variants -->
+    <project path="device/samsung/santos10-common" name="android_device_samsung_santos10-common" remote="Nikilites" revision="los-16.0" />
+
+    <!-- kernel source for santos10 devices -->
+    <project path="kernel/samsung/santos10" name="android_kernel_samsung_santos10" remote="Nikilites" revision="los-16.0" />
+
+    <!-- proprietary vendor blobs for santos103g -->
+    <project path="vendor/samsung/santos103g" name="proprietary_vendor_samsung_santos103g" remote="Nikilites" revision="los-16.0" />
 </manifest>
